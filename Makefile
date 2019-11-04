@@ -1,4 +1,5 @@
 CARGO=cargo
+RUSTUP=rustup
 
 
 run:
@@ -9,3 +10,6 @@ build:
 
 check:
 	$(CARGO) check
+
+components:
+	$(RUSTUP) component add rls rust-analysis rust-src
