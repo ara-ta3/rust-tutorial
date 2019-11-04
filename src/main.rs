@@ -1,6 +1,7 @@
 use std::io;
 
 fn main() {
+    println!("Enter the max number for fizz buzz");
     let max = read_max().expect("failed to read");
     if max > 1000 {
         println!("too big number = {}", max);
