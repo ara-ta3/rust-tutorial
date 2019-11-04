@@ -12,6 +12,13 @@ fn main() {
         let s = fiz_buzz(x);
         println!("{}", s);
     }
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    println!("rect1 is {:?}", rect1);
+    println!("rect1 is {:#?}", rect1);
 }
 
 fn read_line() -> Result<String, String> {
@@ -40,4 +47,10 @@ fn fiz_buzz(n: i32) -> String {
     } else {
         n.to_string()
     }
+}
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
 }
